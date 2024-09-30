@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function playButton(){
-    const naviage = useNavigate();
+function PlayButton(){
+    const navigate = useNavigate();
 
     const handleClick = () =>{
-        naviage('/play');
+        navigate('/play');
     };
 
     return (
@@ -14,4 +14,4 @@ function playButton(){
 
 }
 
-export default playButton;
+export default PlayButton;
