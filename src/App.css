@@ -1,10 +1,24 @@
 body {
   background-color: white;
   color: black;
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Mina", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1{
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .App {

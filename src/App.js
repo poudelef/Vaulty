@@ -1,6 +1,8 @@
 import './App.css';
 import profile from'./assets/profile.jpg'
 
+import playButton from './functions';
+
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
       <div className='content'>
         <aside className='sidebar'>
         <div class = 'main-content'>
-        <div class = 'one'><button class ='main-content-button'>Play</button></div>
+        <div class = 'one'> <playButton/></div>
         <div class = 'one'><button class ='main-content-button'>Next Rotation</button></div>
         <div class = 'one'><button class ='main-content-button'>Intrest buttonaid</button></div>
         <div class = 'one'><button class ='main-content-button'>Total Money Received</button></div>
