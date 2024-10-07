@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.main {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(112, 128, 144);
+    color: white;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Snap to sections on scroll */
+}
+
+.inner_main, .second_main {
+    width: 100vw;
+    height: 100vh; /* Each section takes up the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 62, 62);
+    color: white;
+    scroll-snap-align: start; /* Snap point */
+}
+
+.right, .left {
+    flex: 1; /* Each takes up 50% of the available space */
+    height: 100%; /* Make right and left divs take up 100% of inner_main's height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-color: rgb(112, 128, 144);
+}
+
+.left {
+    background-color: rgb(112, 128, 144);
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Ensures image in the right div scales correctly */
+    border-radius: 50%;
+}
+
+.text-content {
+    padding: 20px;
+    text-align: center; /* Centers text in the left div */
+}
+
+h2 {
+    font-family: "Goudy Bookletter 1911", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.p1 {
+    font-size: 30px;
+}
