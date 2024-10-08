@@ -4,15 +4,24 @@ import './Home.css';
 
 const Home = () => {
   const [startTyping, setStartTyping] = useState(false);
+  const [backendData, setBackendData] = useState(null);
 
   useEffect(() => {
+    // Fetch data from the backend
+    fetch('http://localhost:5000/')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        setBackendData(data); // Store backend data in state
+      })
+      .catch(err => console.log(err));
+
     // This will make sure the typewriter only starts once the component is mounted
     setStartTyping(true);
   }, []);
 
   return (
     <div className="main">
-      
       <div className="inner_main">
         <div className="right">
           <img src={require('../../assets/logo.png')} alt="Right section content" />
@@ -24,7 +33,7 @@ const Home = () => {
                 <Typewriter
                   options={{
                     autoStart: true,
-                    loop : true,
+                    loop: true,
                     delay: 80,
                     strings: ["Business = Time"],
                   }}
@@ -46,20 +55,24 @@ const Home = () => {
           <img className='money_img' src={require('../../assets/money.png')} alt="Right section content" />
         </div>
       </div>
+      
       <div className='third_main'>
         <h1>Submit inquiry Form</h1>
         <form>
-          <label for="fname"> First name:</label><br></br>
-          <input type="text" id="fname" name="fname"></input><br></br>
-          <label for="lname"> Last name:</label><br></br>
-          <input type="text" id="lname" name="lname"></input><br></br>
-          <label for="email"> Email:</label><br></br>
-          <input type="text" id="email" name="email"></input><br></br>
-          <label for="phone"> Phone number:</label><br></br>
-          <input type="number" id="phone" name="phone"></input><br></br>
-          <input className = "submit"type="submit" value="Submit"></input>
+          <label htmlFor="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label htmlFor="lname">Last name:</label><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <label htmlFor="email">Email:</label><br />
+          <input type="text" id="email" name="email" /><br />
+          <label htmlFor="phone">Phone number:</label><br />
+          <input type="number" id="phone" name="phone" /><br />
+          <input className="submit" type="submit" value="Submit" />
         </form>
       </div>
+
+      {/* Optionally display backend data */}
+      {backendData && <div>{backendData.message}</div>}
     </div>
   );
 };

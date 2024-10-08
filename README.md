@@ -72,3 +72,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### npm install react-router-dom
 
 ### npm install @babel/plugin-proposal-private-property-in-object --save-dev
+
+### for database I used mongodb Atalas
+
+## i installed mongodb
+
+## install cors mongooes express
+
+##### then
+
+## run node server.js in backend folder to connect with database.
