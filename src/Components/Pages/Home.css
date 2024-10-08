@@ -23,7 +23,7 @@ html, body {
     scroll-snap-type: y mandatory; /* Snap to sections on scroll */
 }
 
-.inner_main, .second_main {
+.inner_main, .second_main{
     width: 100vw;
     height: 100vh; /* Each section takes up the full viewport height */
     display: flex;
@@ -32,6 +32,26 @@ html, body {
     background-color: rgb(65, 62, 62);
     color: white;
     scroll-snap-align: start; /* Snap point */
+}
+
+.third_main{
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    scroll-snap-align: start; /* Snap point */
+    background-color: azure;
+    height: 70vh;
+}
+
+h1{
+    padding: 30px;
+}
+
+.submit{
+    margin-top: 10px;
 }
 
 .right, .left {
@@ -50,10 +70,24 @@ html, body {
     background-color: rgb(112, 128, 144);
 }
 
+.right_down, .left_down{
+    flex: 1; /* Each takes up 50% of the available space */
+    height: 100%; /* Make right and left divs take up 100% of inner_main's height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 img {
     max-width: 100%;
     height: auto; /* Ensures image in the right div scales correctly */
     border-radius: 50%;
+}
+
+.money_img{
+    max-width: 80%;
+    height: auto; /* Ensures image in the right div scales correctly */
+    border-radius: 30%;
 }
 
 .text-content {
@@ -68,6 +102,10 @@ h2 {
     font-size: 70px;
 }
 
-.p1 {
+.p1,.p2 {
     font-size: 30px;
+}
+
+.p2{
+    padding: 20px;
 }

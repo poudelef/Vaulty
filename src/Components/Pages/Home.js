@@ -37,7 +37,28 @@ const Home = () => {
       </div>
 
       <div className="second_main">
-        <h2>Hello</h2>
+        <div className="left_down">
+          <div className="text-content">
+            <p className="p2">Secure Your Future, One Investment at a Time</p>
+          </div>
+        </div>
+        <div className="right_down">
+          <img className='money_img' src={require('../../assets/money.png')} alt="Right section content" />
+        </div>
+      </div>
+      <div className='third_main'>
+        <h1>Submit inquiry Form</h1>
+        <form>
+          <label for="fname"> First name:</label><br></br>
+          <input type="text" id="fname" name="fname"></input><br></br>
+          <label for="lname"> Last name:</label><br></br>
+          <input type="text" id="lname" name="lname"></input><br></br>
+          <label for="email"> Email:</label><br></br>
+          <input type="text" id="email" name="email"></input><br></br>
+          <label for="phone"> Phone number:</label><br></br>
+          <input type="number" id="phone" name="phone"></input><br></br>
+          <input className = "submit"type="submit" value="Submit"></input>
+        </form>
       </div>
     </div>
   );
