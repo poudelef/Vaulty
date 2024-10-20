@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
@@ -41,10 +42,10 @@ const Home = () => {
               </h2>
             )}
             <p className="p1">Invest wise and easy</p>
+            <Link to="/User_info" className="cta-button">Get Started</Link>
           </div>
         </div>
       </div>
-
       <div className="second_main">
         <div className="left_down">
           <div className="text-content">

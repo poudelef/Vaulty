@@ -1,0 +1,51 @@
+.find-people-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .user-card {
+    background-color: #0d1012;
+    border: 1px solid #0c0606;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .connect-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .connect-button:hover {
+    background-color: #218838;
+  }
